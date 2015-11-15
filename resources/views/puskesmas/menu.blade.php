@@ -1,5 +1,4 @@
-@extends('main')
-<!-- main header -->
+ <!-- main header -->
     <header id="header_main">
         <div class="header_main_content">
             <nav class="uk-navbar">
@@ -68,7 +67,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="{{asset('assets/img/avatars/avatar_07_tn.png')}}" alt=""/>
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="pages_mailbox.html">Ut omnis voluptatibus.</a></span>
@@ -86,7 +85,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="{{asset('assets/img/avatars/avatar_02_tn.png')}}" alt=""/>
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="pages_mailbox.html">Qui ab sed.</a></span>
@@ -95,7 +94,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="assets/img/avatars/avatar_09_tn.png" alt=""/>
+                                                        <img class="md-user-image md-list-addon-avatar" src="{{asset('assets/img/avatars/avatar_09_tn.png')}}" alt=""/>
                                                     </div>
                                                     <div class="md-list-content">
                                                         <span class="md-list-heading"><a href="pages_mailbox.html">Iure magni quia.</a></span>
@@ -175,75 +174,8 @@
 		
 		<div style="color: white;margin-top: -30px ; margin-right: 200px; float: right">
 		
-		   {{ session('user_id') }} :: <i>{{ session('nama') }} </i>
+		   tes </i>
 		   	
 		
 		</div>
     </header><!-- main header end -->
-
-<script>
-    $(function() {
-        var $switcher = $('#style_switcher'),
-            $switcher_toggle = $('#style_switcher_toggle'),
-            $theme_switcher = $('#theme_switcher'),
-            $mini_sidebar_toggle = $('#style_sidebar_mini');
-
-        $switcher_toggle.click(function(e) {
-            e.preventDefault();
-            $switcher.toggleClass('switcher_active');
-        });
-
-        $theme_switcher.children('li').click(function(e) {
-            e.preventDefault();
-            var $this = $(this),
-                this_theme = $this.attr('data-app-theme');
-
-            $theme_switcher.children('li').removeClass('active_theme');
-            $(this).addClass('active_theme');
-            $('body')
-                .removeClass('app_theme_a app_theme_b app_theme_c app_theme_d app_theme_e app_theme_f app_theme_g')
-                .addClass(this_theme);
-
-            if(this_theme == '') {
-                localStorage.removeItem('altair_theme');
-            } else {
-                localStorage.setItem("altair_theme", this_theme);
-            }
-
-        });
-
-        // change input's state to checked if mini sidebar is active
-        if((localStorage.getItem("altair_sidebar_mini") !== null && localStorage.getItem("altair_sidebar_mini") == '1') || $('body').hasClass('sidebar_mini')) {
-            $mini_sidebar_toggle.iCheck('check');
-        }
-
-        // toggle mini sidebar
-        $mini_sidebar_toggle
-            .on('ifChecked', function(event){
-                $switcher.removeClass('switcher_active');
-                localStorage.setItem("altair_sidebar_mini", '1');
-                location.reload(true);
-            })
-            .on('ifUnchecked', function(event){
-                $switcher.removeClass('switcher_active');
-                localStorage.removeItem('altair_sidebar_mini');
-                location.reload(true);
-            });
-
-        // hide style switcher
-        $document.on('click keyup', function(e) {
-            if( $switcher.hasClass('switcher_active') ) {
-                if (
-                    ( !$(e.target).closest($switcher).length )
-                    || ( e.keyCode == 27 )
-                ) {
-                    $switcher.removeClass('switcher_active');
-                }
-            }
-        });
-
-        if(localStorage.getItem("altair_theme") !== null) {
-            $theme_switcher.children('li[data-app-theme='+localStorage.getItem("altair_theme")+']').click();
-        }
-    });
-</script>

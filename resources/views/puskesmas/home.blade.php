@@ -1,6 +1,6 @@
-@extends('asli')
-<!--@extends('puskesmas/menu')
-@extends('puskesmas/sidebar')-->
+@extends('main')
+@extends('puskesmas/menu')
+@extends('puskesmas/sidebar')
 
 @section ('container')
 
