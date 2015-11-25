@@ -39,9 +39,10 @@ class LoginController extends Controller
                       //$data=Session::all();
                       //Session::save();
                       //print_r($data);
-                      if($result[0]->type==0){ $type='administrator'; $resultSent = "0|".$type; }
+                      if($result[0]->type==9){ $type='administrator'; $resultSent = "9|".$type; }
                       if($result[0]->type==1){ $type='puskesmas'; $resultSent = "1|".$type; }
-                      if($result[0]->type==2){ $type='rumahsakit'; $resultSent = "1|".$type; }
+                      if($result[0]->type==2){ $type='rumahsakit'; $resultSent = "2|".$type; }
+ //print_r($resultSent);exit;
                 }
                 else
                 {

@@ -484,6 +484,12 @@
 .uk-table thead th {
   border-bottom: 2px solid rgba(0, 0, 0, 0.12);
 }
+.uk-table tbody td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .uk-table thead th,
 .uk-table tfoot td,
 .uk-table tfoot th {

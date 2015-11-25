@@ -2,6 +2,20 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/puskesmas/sidebar.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/app/Http/routes.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/main.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/rumahsakit/home.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/puskesmas/home.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/administrator/home.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/public/action.js</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/app/Http/Controllers/LoginController.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/app/Http/Controllers/AccountController.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/login.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/ppk.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/base.blade.php</file>
+            <file>file:/Users/macbookpro/repo_git/epuskesmas/resources/views/puskesmas/menu.blade.php</file>
+        </group>
     </open-files>
 </project-private>

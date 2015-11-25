@@ -12,25 +12,25 @@ namespace App\Http\Controllers;
     <meta name="msapplication-tap-highlight" content="no"/>
 
     <meta name="_token" content="{!! csrf_token() !!}"/>
-    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{asset('assets/img/favicon-16x16.png')}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{asset('assets/img/favicon-32x32.png')}}" sizes="32x32">
     <title>E-Puskesmas | Login Area</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
-    <script src="assets/js/jquery.js"></script>
+    <script src="{{asset('assets/js/jquery.js')}}"></script>
     <!-- uikit -->
-    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css"/>
+    <link rel="stylesheet" href="{{asset('bower_components/uikit/css/uikit.almost-flat.min.css')}}"/>
     <!-- altair admin login page -->
-    <link rel="stylesheet" href="assets/css/login_page.min.css" />
+    <link rel="stylesheet" href="{{asset('assets/css/login_page.min.css')}}" />
 	
 
 </head>
-<body class="login_page" background="assets/img/tiled.jpg"   >
+<body class="login_page" background="{{asset('assets/img/tiled.jpg')}}"   >
 
     <div class="login_page_wrapper">
         <div class="md-card" id="login_card">
             <div class="md-card-content large-padding" id="login_form">
                 <div class="login_heading">
-					<div ><img src='assets/img/logo_main.png' ></div>
+					<div ><img src='{{asset('assets/img/logo_main.png')}}' ></div>
                     <div class="user_avatar"></div>
                 </div>
                 
@@ -57,14 +57,14 @@ namespace App\Http\Controllers;
     </div>
 
     <!-- common functions -->
-    <script src="assets/js/common.min.js"></script>
+    <script src="{{asset('assets/js/common.min.js')}}"></script>
     <!-- altair core functions -->
-    <script src="assets/js/altair_admin_common.min.js"></script>
+    <script src="{{asset('assets/js/altair_admin_common.min.js')}}"></script>
 
     <!-- altair login page functions -->
-    <script src="assets/js/pages/login.min.js"></script>
+    <script src="{{asset('assets/js/pages/login.min.js')}}"></script>
 	
-    <script src="action.js"></script>
+    <script src="{{asset('action.js')}}"></script>
     
 </body>
 </html>

@@ -17,13 +17,28 @@
                         <span class="menu_title">Home</span>
                     </a>
                 </li>
-                <li title="Rujukan">
-                    <a onclick='rujukan()'>
-                        <span class="menu_icon"><i class="material-icons">&#xE548;</i></span>
-                        <span class="menu_title">Rujukan</span>
+                <li title="Daftar Kegiatan">
+                    <a onclick='ppk_kegiatan_list()'>
+                        <span class="menu_icon"><i class="material-icons">&#xE8C9;</i></span>
+                        <span class="menu_title">Kegiatan</span>
                     </a>
                 </li>
-					
+				
+                <li title="Daftar Kegiatan">
+                    <a onclick='ppk_pekerjaan_list()'>
+                        <span class="menu_icon"><i class="material-icons ">&#xE8CA;</i></span>
+                        <span class="menu_title">Pekerjaan</span>
+                    </a>
+                </li>
+				
+				
+                <li title="Daftar Dokumen Kontrak">
+                    <a onclick="ppk_kontrak_list(0)">
+                        <span class="menu_icon"><i class="material-icons">&#xE02F;</i></span>
+                        <span class="menu_title">Dokumen Kontrak</span>
+                    </a>
+                </li>
+				
 				
             </ul>
         </div>

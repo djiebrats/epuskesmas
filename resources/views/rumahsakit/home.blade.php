@@ -1,6 +1,6 @@
 @extends('main')
-@extends('puskesmas/menu')
-@extends('puskesmas/sidebar')
+@extends('rumahsakit/menu')
+@extends('rumahsakit/sidebar')
 
 @section ('container')
 
@@ -19,9 +19,9 @@
                             Anda masuk sebagai login Puskesmas. Dalam login ini anda memiliki beberapa menu :
                         <ul>
                                 <li><b>Setting Puskesmas</b> <br>
-                                        <!--Menu untuk mensetting informasi mengenai data perpustakaan-->
+                                        Menu untuk mensetting informasi mengenai data perpustakaan
                                 </li>
-<!--                                <li><b>Data Dokter</b> <br>
+                                <li><b>Data Dokter</b> <br>
                                         Menu untuk melihat, menambah, merubah data dokter yang berada di puskesmas
                                 </li>
                                 <li><b>Data Pasien</b> <br>
@@ -29,7 +29,7 @@
                                 </li>
                                 <li><b>Data Rekam Medis</b> <br>
                                         Menu untuk melihat, menambah data rekam medis berdasarkan data pasien. terdapat menu pencarian pasien berdasarkan nama atau id pasien
-                                </li>-->
+                                </li>
                                 <li><b>Rujukan Ke Rumah Sakit</b> <br>
                                         Menu untuk Melakukan rujukan ke rumah sakit terhadap seorang pasien. 
                                 </li>

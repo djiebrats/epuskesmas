@@ -8,10 +8,14 @@ use Illuminate\Http\Response;
 use Session;
 class AccountController extends Controller {
   protected function validasiUser($folder){       
-        $value = session('user_id');        
+        $value = session('user_id');     
+        //print_r($value.' '.$folder);exit;
         if($value){
-            $que = DB::table('users')->where('id',$value)->value('username');
-            return view($folder.'.home',['nama_user'=>$que]);
+            $que = DB::table('users')
+                    ->where('id',$value)
+                    ->where('username',session('user_name'))
+                    ->value('username');
+            return view($folder.'.home',['username'=>$que]);
         }
         else{
             session()->forget('user_id');

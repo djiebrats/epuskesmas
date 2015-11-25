@@ -7,11 +7,22 @@ $(document).ready(function(){
       data: {'u':$('#u').val(),'p':$('#p').val(),'_token': $('input[name=_token]').val()},
       success: function(data){	  	
         data=data.trim();
-        alert(data);
+        //alert(data);
         arr=data.split("|");
-        //alert(arr[0].trim());
+        //alert(arr[1].trim());
         if(arr[0]==1) 
         {
+            //untuk puskesmas
+            window.location.replace('main/'+arr[1]);
+        }
+        if(arr[0]==2) 
+        {
+            //untuk rumahsakit
+            window.location.replace('main/'+arr[1]);
+        }
+        if(arr[0]==9) 
+        {
+            //untuk administrator
             window.location.replace('main/'+arr[1]);
         }
 
@@ -24,7 +35,46 @@ $(document).ready(function(){
   }); 
 });
 
+$(document).ready(function(){
+	$('#btn_verif').click(function(){    
+		$('#pesan_simpan').html("<img src='assets/img/loading.gif'>");
+		$.ajax({
+			url: 'verifpasien',
+			type: "post",
+			data: {'id_rm':$('#id_rm').val()},
+			success: function(data){	
+				window.location.replace('main/verifpasien');
+			}
+		});      
+	}); 
+});
 
+function regpasien()
+{
+	$("#utama").html('<img src="assets/img/loading.gif">');
+	 $.ajax({
+      url: 'regpasien',
+      type: "post",
+      data: {'_token': $('input[name=_token]').val()},
+      success: function(data){
+        $("#utama").html(data);	
+        }
+    });
+	
+}
+function rujukan()
+{
+	$("#utama").html('<img src="assets/img/loading.gif">');
+	 $.ajax({
+      url: 'rujukan',
+      type: "post",
+      data: {'_token': $('input[name=_token]').val()},
+      success: function(data){
+        $("#utama").html(data);	
+        }
+    });
+	
+}
 
 function ppk_kegiatan_list()
 {

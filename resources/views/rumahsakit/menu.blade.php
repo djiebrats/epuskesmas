@@ -19,26 +19,25 @@
                             <div class="uk-grid uk-dropdown-grid" data-uk-grid-margin>
                                 <div class="uk-width-2-2">
                                     <div class="uk-grid uk-grid-width-medium-1-3 uk-margin-top uk-margin-bottom uk-text-center" data-uk-grid-margin>
-                                        <a href="{{URL::to('main/puskesmas')}}">
+                                        <a  href="main/puskesmas">
                                             <i class="material-icons md-36">&#xE88A;</i>
                                             <span class="uk-text-muted uk-display-block">Home</span>
                                         </a>
 										
-<!--                                        <a  onclick='ppk_kegiatan_list()' >
+                                        <a  onclick='ppk_kegiatan_list()' >
                                             <i class="material-icons md-36">&#xE87C;</i>
                                             <span class="uk-text-muted uk-display-block">Dokter</span>
                                         </a>
                                       				  
-                                        
                                         <a  onclick='ppk_pekerjaan_list()' >
-                                            <i class="material-icons md-36">&#xE02F;</i>
-                                            <span class="uk-text-muted uk-display-block">Rekam Medis</span>
-                                        </a>-->
-                                        <a  href="{{URL::to('main/regpasien')}}" >
                                             <i class="material-icons md-36">&#xE85E;</i>
                                             <span class="uk-text-muted uk-display-block">Pasien</span>
                                         </a>
-                                        <a  href="{{URL::to('main/rujukan')}}" >
+                                        <a  onclick='ppk_pekerjaan_list()' >
+                                            <i class="material-icons md-36">&#xE02F;</i>
+                                            <span class="uk-text-muted uk-display-block">Rekam Medis</span>
+                                        </a>
+                                        <a  onclick='ppk_pekerjaan_list()' >
                                             <i class="material-icons md-36">&#xE548;</i>
                                             <span class="uk-text-muted uk-display-block">Rujukan</span>
                                         </a>
