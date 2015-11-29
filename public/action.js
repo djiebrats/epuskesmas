@@ -18,7 +18,7 @@ $(document).ready(function(){
         if(arr[0]==2) 
         {
             //untuk rumahsakit
-            window.location.replace('main/'+arr[1]);
+            window.location.replace('rumahsakit/'+arr[1]);
         }
         if(arr[0]==9) 
         {
@@ -33,6 +33,19 @@ $(document).ready(function(){
       }
     });      
   }); 
+});
+$(document).ready(function(){
+	$('#btn_daftar').click(function(){    
+		$('#pesan_simpan').html("<img src='assets/img/loading.gif'>");
+		$.ajax({
+			url: 'registrasi',
+			type: "post",
+			data: {},
+			success: function(data){	
+				window.location.replace('registrasi');
+			}
+		});      
+	}); 
 });
 
 $(document).ready(function(){

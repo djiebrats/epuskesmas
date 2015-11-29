@@ -16,21 +16,15 @@
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Anda masuk sebagai login Puskesmas. Dalam login ini anda memiliki beberapa menu :
+                            Anda masuk sebagai login Rumah Sakit. Dalam login ini anda memiliki beberapa menu :
                         <ul>
-                                <li><b>Setting Puskesmas</b> <br>
-                                        Menu untuk mensetting informasi mengenai data perpustakaan
-                                </li>
-                                <li><b>Data Dokter</b> <br>
-                                        Menu untuk melihat, menambah, merubah data dokter yang berada di puskesmas
-                                </li>
                                 <li><b>Data Pasien</b> <br>
-                                        Menu untuk melihat, menambah, merubah data pasien pada puskesmas
+                                        Menu untuk melihat, menambah, merubah data pasien pada Rumah Sakit
                                 </li>
                                 <li><b>Data Rekam Medis</b> <br>
                                         Menu untuk melihat, menambah data rekam medis berdasarkan data pasien. terdapat menu pencarian pasien berdasarkan nama atau id pasien
                                 </li>
-                                <li><b>Rujukan Ke Rumah Sakit</b> <br>
+                                <li><b>Data Rujukan yang Masuk</b> <br>
                                         Menu untuk Melakukan rujukan ke rumah sakit terhadap seorang pasien. 
                                 </li>
 

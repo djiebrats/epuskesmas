@@ -25,15 +25,15 @@ namespace App\Http\Controllers;
 
 </head>
 <body class="login_page" background="{{asset('assets/img/tiled.jpg')}}"   >
-
     <div class="login_page_wrapper">
         <div class="md-card" id="login_card">
             <div class="md-card-content large-padding" id="login_form">
                 <div class="login_heading">
 					<div ><img src='{{asset('assets/img/logo_main.png')}}' ></div>
-                    <div class="user_avatar"></div>
+                                        <div class="user_avatar">
+                                            <div ><img src='{{asset('assets/img/kediri.jpg')}}' size="300%" ></div>
+                                        </div>
                 </div>
-                
 				<formoo action='login' method='POST' id='myform'>
                     <div class="uk-form-row">
                         <label for="login_username">Username</label>
@@ -52,7 +52,23 @@ namespace App\Http\Controllers;
 				<input type="hidden" name="_token" value="{!! csrf_token() !!}">
 				</formoo>
             </div>
-            
+        </div>
+        <div class="md-card md-card-hover md-card-overlay md-card-overlay-active">
+                        <div class="md-card-content" id="canvas_1">
+                        </div>
+                        <div class="md-card-overlay-content">
+                            <div class="uk-clearfix md-card-overlay-header">
+                                <h3>
+                                    Menjadi Anggota
+                                </h3>
+                            </div>
+                            <p>Belum Menjadi anggota dari rumah sakit</p>
+                            <div class="uk-margin-medium-top">
+                                <a  href="registrasi">
+                                    <button class="md-btn md-btn-primary md-btn-block md-btn-large" id="btn_daftar">Daftar Baru</button>
+                                </a>
+                            </div>
+                        </div>
         </div>
     </div>
 

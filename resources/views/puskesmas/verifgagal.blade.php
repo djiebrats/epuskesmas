@@ -11,14 +11,14 @@
                     <div class="md-card">
                         <div class="md-card-toolbar">
                             
-                            <h3 class="heading_b uk-margin-top">Nomor rekam medis tidak ditemukan. silahkan mencoba kembali atau </h3>
+                            <h3 class="heading_b uk-margin-top">Nomor rekam medis tidak ditemukan. silahkan mencoba kembali atau silahkan lakukan registrasi</h3>
                             
-                            <h3 class="heading_b uk-margin-top">Rujukan Pasien ke Rumah Sakit</h3>
+                            
                         </div>
                         <div class="md-card-content">
                            Masukkan nomor rekam medis dari pasien yang akan anda rujuk ke rumah sakit. lalu silahkan tekan verifikasi 
                            
-                           <div class="login_page">
+                           <div class="uk-width-medium-1-2">
                                  <br>       
                                 <form action='verifpasien' method='post' id='myform'>
                                     <div class="uk-form-row">

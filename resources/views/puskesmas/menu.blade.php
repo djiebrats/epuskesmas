@@ -34,10 +34,10 @@
                                             <i class="material-icons md-36">&#xE02F;</i>
                                             <span class="uk-text-muted uk-display-block">Rekam Medis</span>
                                         </a>-->
-                                        <a  href="{{URL::to('main/regpasien')}}" >
+<!--                                        <a  href="{{URL::to('main/regpasien')}}" >
                                             <i class="material-icons md-36">&#xE85E;</i>
                                             <span class="uk-text-muted uk-display-block">Pasien</span>
-                                        </a>
+                                        </a>-->
                                         <a  href="{{URL::to('main/rujukan')}}" >
                                             <i class="material-icons md-36">&#xE548;</i>
                                             <span class="uk-text-muted uk-display-block">Rujukan</span>

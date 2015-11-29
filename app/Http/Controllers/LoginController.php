@@ -53,7 +53,47 @@ class LoginController extends Controller
             }  
     }
     }
+    public function registrasi(){        
+            
+        return view('registrasi');
+    }
     
+    public function daftarbarupasien(){        
+            $data = Input::all();
+            //dd($data);exit;
+            DB::table('pasien')
+                ->insert([
+                    'nik' =>$data['nik'],
+                    'sim'=>$data['sim'],
+                    'paspor' =>$data['paspor'],
+                    'nama' =>$data['nama'],
+                    'tempat_lahir' =>$data['tempat_lahir'],
+                    'tanggal_lahir' =>$data['tanggal_lahir'],
+                    'jenis_kelamin' =>$data['jenis_kelamin'],
+                    'status' =>$data['status'],
+                    'agama' =>$data['agama'],
+                    'kebangsaan' =>$data['kebangsaan'],
+                    'pekerjaan' =>$data['pekerjaan'],
+                    'alamat' =>$data['alamat'],
+                    'kelurahan' =>$data['kelurahan'],
+                    'kecamatan' =>$data['kecamatan'],
+                    'rt' =>$data['rt'],
+                    'rw' =>$data['rw'],
+                    'kabupaten' =>$data['kabupaten'],
+                    'asuransi' =>$data['asuransi'],
+                    'alamat2' =>$data['alamat2'],
+                    'no_tlp' =>$data['no_tlp'],
+                    'no_tlp2' =>$data['no_tlp2'],
+                    'no_kantor' =>$data['no_kantor'],
+                    'hp' =>$data['hp'],
+                    'e_nama' =>$data['e_nama'],
+                    'e_hubungan' =>$data['e_hubungan'],
+                    'e_no_tlp' =>$data['e_no_tlp'],
+                    'e_alamat' =>$data['e_alamat'],]);
+            $nama=$data['nama'];
+            $data[]="";
+        return view('regsukses',['nama_register'=>$nama]);
+    }
     public function logout(){        
 //        $que=DB::transaction(function(){              
 //                DB::table('user_login')

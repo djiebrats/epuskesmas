@@ -8,17 +8,18 @@
            
         </div>
         <div class="menu_section">
-		
-				<input type="hidden" name="_token" value="{!! csrf_token() !!}">
+            
+				<!--<input type="hidden" name="_token" value="{!! csrf_token() !!}">-->
             <ul>
+                
                 <li title="Home">
-                    <a href="../public/ppk"  >
+                    <a href="{{URL::to('main/puskesmas')}}">
                         <span class="menu_icon"><i class="material-icons">&#xE88A;</i></span>
                         <span class="menu_title">Home</span>
                     </a>
                 </li>
                 <li title="Rujukan">
-                    <a onclick='rujukan()'>
+                    <a href="{{URL::to('main/rujukan')}}">
                         <span class="menu_icon"><i class="material-icons">&#xE548;</i></span>
                         <span class="menu_title">Rujukan</span>
                     </a>

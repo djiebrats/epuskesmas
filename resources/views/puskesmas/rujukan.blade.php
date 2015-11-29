@@ -16,7 +16,7 @@
                         <div class="md-card-content">
                            Masukkan nomor rekam medis dari pasien yang akan anda rujuk ke rumah sakit. lalu silahkan tekan verifikasi 
                            
-                           <div class="login_page">
+                           <div class="uk-width-medium-1-2">
                                  <br>       
                                 <form action='verifpasien' method='post' id='myform'>
                                     <div class="uk-form-row">

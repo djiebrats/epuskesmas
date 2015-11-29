@@ -12,20 +12,20 @@
 				<input type="hidden" name="_token" value="{!! csrf_token() !!}">
             <ul>
                 <li title="Home">
-                    <a href="../public/ppk"  >
+                    <a href="{{URL::to('rumahsakit/home')}}">
                         <span class="menu_icon"><i class="material-icons">&#xE88A;</i></span>
                         <span class="menu_title">Home</span>
                     </a>
                 </li>
                 <li title="Daftar Kegiatan">
-                    <a onclick='ppk_kegiatan_list()'>
+                    <a href="{{URL::to('rumahsakit/daftarpasien')}}">
                         <span class="menu_icon"><i class="material-icons">&#xE8C9;</i></span>
                         <span class="menu_title">Kegiatan</span>
                     </a>
                 </li>
 				
                 <li title="Daftar Kegiatan">
-                    <a onclick='ppk_pekerjaan_list()'>
+                    <a href="{{URL::to('rumahsakit/daftarrujukan')}}">
                         <span class="menu_icon"><i class="material-icons ">&#xE8CA;</i></span>
                         <span class="menu_title">Pekerjaan</span>
                     </a>
