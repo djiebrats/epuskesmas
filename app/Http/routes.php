@@ -37,6 +37,7 @@ Route::match(['get', 'post'],'rumahsakit/rujukan/{aksi}/{id}', 'RumahsakitContro
 Route::match(['get', 'post'],'rumahsakit/registrasi', 'RumahsakitController@registrasi');
 Route::match(['get', 'post'],'rumahsakit/daftarbarupasien', 'RumahsakitController@daftarbarupasien');
 Route::match(['get', 'post'],'rumahsakit/verifpasien/{id}', 'RumahsakitController@verifpasien');
+Route::match(['get', 'post'],'rumahsakit/saverm', 'RumahsakitController@saverm');
 
 
 //Route::get('administrator', function () {

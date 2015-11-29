@@ -57,12 +57,37 @@
                                     <td>:</td>
                                     <td><font color="red" size="18"><B>{{$result->id}}</b></font></td>
                                 </tr>
+                                <tr>
+                                    <td colspan="3" align='center'><br><br></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align='center'><button   class="md-btn md-btn-primary"  onclick="myFunction()">Cetak </button></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align='center'><br><br></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align='center'>Silahkan Simpan atau cetak dan tunjukkan  <br> pada loket di rumahsakit sebagai tanda bukti rujukan.</td>
+                                    
+                                </tr>
                             </table>
+                            
                             <br>
-                            Silahkan Simpan atau cetak dan tunjukkan pada loket di rumahsakit sebagai tanda bukti rujukan.
+                            <br>
+                            <br>
+                           
                         </div>
                     </div>
                 </div>
 			</div>
         </div>
     </div>
+
+<script>
+function myFunction() {
+    window.print();
+}
+</script>

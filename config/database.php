@@ -61,28 +61,28 @@ return [
 //
 //    ],
     'connections' => [
-//        'mysql' => [
-//            'driver'    => 'mysql',
-//            'host'      => '127.0.0.1',
-//            'database'  => 'epuskesmas',
-//            'username'  => 'root',
-//            'password'  => 'rahasia',
-//            'charset'   => 'utf8',
-//            'collation' => 'utf8_unicode_ci',
-//            'prefix'    => '',
-//            'strict'    => false,
-//        ],
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'bisma-epuskesmas.rhcloud.com',
-            'database'  => 'bisma',
-            'username'  => 'adminKm4Jfzd',
-            'password'  => 'nzqfJVXB9ww3',
+            'host'      => '127.0.0.1',
+            'database'  => 'epuskesmas',
+            'username'  => 'root',
+            'password'  => 'rahasia',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
         ],
+//        'mysql' => [
+//            'driver'    => 'mysql',
+//            'host'      => 'bisma-epuskesmas.rhcloud.com',
+//            'database'  => 'bisma',
+//            'username'  => 'adminKm4Jfzd',
+//            'password'  => 'nzqfJVXB9ww3',
+//            'charset'   => 'utf8',
+//            'collation' => 'utf8_unicode_ci',
+//            'prefix'    => '',
+//            'strict'    => false,
+//        ],
 
     ],
 

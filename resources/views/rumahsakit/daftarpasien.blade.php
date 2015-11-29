@@ -72,7 +72,7 @@
                                     </td>
                                     <td>
                                         @if(!$rs->id_rm)
-                                        <a title="Verifikasi Data" data-uk-modal="{target:'#modal_header_rekammedis'}"
+                                        <a title="Verifikasi Data" 
                                            href="{{URL::to('rumahsakit/verifpasien/'.$rs->id)}}">
                                                             <i class="md-icon material-icons md-24">note_add</i>
                                         </a>

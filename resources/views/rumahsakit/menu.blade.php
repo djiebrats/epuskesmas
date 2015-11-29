@@ -153,7 +153,7 @@
                             <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
                                 <ul class="uk-nav js-uk-prevent">
                                     <li><a >Ubah Password</a></li>
-                                    <li><a href="../logout" >Logout</a></li>
+                                    <li><a href="{{URL::to('logout')}}">Logout</a></li>
                                 </ul>
                             </div>
                         </li>

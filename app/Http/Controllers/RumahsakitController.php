@@ -13,10 +13,44 @@ class RumahsakitController extends Controller {
     }
     protected function verifpasien($id){
         $que=DB::table('pasien')
-            ->addselect('id','id_rm','nik','nama','alamat','kelurahan','kecamatan','rt','rw','kabupaten')
-            ->where('id_rm',$id)
+            ->where('id',$id)
             ->first();
         return view('rumahsakit/verifpasien',['result'=>$que]);
+    }
+    protected function saverm(){
+        $data = Input::all();
+        $que=DB::table('pasien')
+                ->where('id', $data['id']);
+        $que=$que->update([
+                    'id_rm'=>$data['id_rm'],
+                    'nik' =>$data['nik'],
+                    'sim'=>$data['sim'],
+                    'paspor' =>$data['paspor'],
+                    'nama' =>$data['nama'],
+                    'tempat_lahir' =>$data['tempat_lahir'],
+                    'tanggal_lahir' =>$data['tanggal_lahir'],
+                    'jenis_kelamin' =>$data['jenis_kelamin'],
+                    'status' =>$data['status'],
+                    'agama' =>$data['agama'],
+                    'kebangsaan' =>$data['kebangsaan'],
+                    'pekerjaan' =>$data['pekerjaan'],
+                    'alamat' =>$data['alamat'],
+                    'kelurahan' =>$data['kelurahan'],
+                    'kecamatan' =>$data['kecamatan'],
+                    'rt' =>$data['rt'],
+                    'rw' =>$data['rw'],
+                    'kabupaten' =>$data['kabupaten'],
+                    'asuransi' =>$data['asuransi'],
+                    'alamat2' =>$data['alamat2'],
+                    'no_tlp' =>$data['no_tlp'],
+                    'no_tlp2' =>$data['no_tlp2'],
+                    'no_kantor' =>$data['no_kantor'],
+                    'hp' =>$data['hp'],
+                    'e_nama' =>$data['e_nama'],
+                    'e_hubungan' =>$data['e_hubungan'],
+                    'e_no_tlp' =>$data['e_no_tlp'],
+                    'e_alamat' =>$data['e_alamat'],]);
+        return $this->daftarpasien();
     }
     public function daftarbarupasien(){        
             $data = Input::all();
