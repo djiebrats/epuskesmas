@@ -26,7 +26,7 @@ namespace App\Http\Controllers;
 </head>
 <body class="login_page" background="{{asset('assets/img/tiled.jpg')}}"   >
     <div class="login_page_wrapper">
-        <div class="md-card" id="login_card">
+        <div class="md-card md-card-hover " id="login_card">
             <div class="md-card-content large-padding" id="login_form">
                 <div class="login_heading">
 					<div ><img src='{{asset('assets/img/logo_main.png')}}' ></div>
@@ -45,7 +45,13 @@ namespace App\Http\Controllers;
                     </div>
                     <div class="uk-margin-medium-top">
                         <button   class="md-btn md-btn-primary md-btn-block md-btn-large" id="btn_login">Login</button>
+                        
                     </div>
+                            <div class="uk-margin-medium-top">
+                                <a  href="registrasi">
+                                    <button class="md-btn md-btn-primary md-btn-block md-btn-large" id="btn_daftar">Daftar Baru</button>
+                                </a>
+                            </div>
                 
 				<br>
 				<div id="pesan_login" style="color: red"></div>
@@ -53,7 +59,7 @@ namespace App\Http\Controllers;
 				</formoo>
             </div>
         </div>
-        <div class="md-card md-card-hover md-card-overlay md-card-overlay-active">
+<!--        <div class="md-card md-card-hover md-card-overlay md-card-overlay-active">
                         <div class="md-card-content" id="canvas_1">
                         </div>
                         <div class="md-card-overlay-content">
@@ -69,7 +75,7 @@ namespace App\Http\Controllers;
                                 </a>
                             </div>
                         </div>
-        </div>
+        </div>-->
     </div>
 
     <!-- common functions -->

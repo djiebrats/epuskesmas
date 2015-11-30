@@ -11,12 +11,15 @@
                     <div class="md-card">
                         <div class="md-card-toolbar">
                             <h3 class="md-card-toolbar-heading-text">
-                                Selamat datang {{session('nama')}}
+                                Selamat datang <b>{{session('nama')}}</b>
 									
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Anda masuk sebagai login Puskesmas. Dalam login ini anda memiliki beberapa menu :
+                            Anda masuk sebagai login Puskesmas.
+                            Ini adalah Applikasi Daftar Online Pasien Rujukan (ADOPR) yang memberikan fasilitas kepada puskesmas untuk membuat rujukan
+                            secara online. <br>
+                            Dalam login ini anda memiliki beberapa menu :
                         <ul>
                                 <li><b>Setting Puskesmas</b> <br>
                                         <!--Menu untuk mensetting informasi mengenai data perpustakaan-->

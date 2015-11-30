@@ -11,12 +11,16 @@
                     <div class="md-card">
                         <div class="md-card-toolbar">
                             <h3 class="md-card-toolbar-heading-text">
-                                Selamat datang {{session('nama')}}
+                                Selamat datang, <b>{{session('nama')}}</b>
+                                
 									
                             </h3>
                         </div>
                         <div class="md-card-content">
-                            Anda masuk sebagai login Rumah Sakit. Dalam login ini anda memiliki beberapa menu :
+                            Anda masuk sebagai login Rumah Sakit.<br>
+                            Ini adalah Applikasi Daftar Online Pasien Rujukan (ADOPR) yang memberikan fasilitas kepada puskesmas untuk membuat rujukan
+                            secara online. <br>
+                            Dalam login ini anda memiliki beberapa menu :
                         <ul>
                                 <li><b>Data Pasien</b> <br>
                                         Menu untuk melihat, menambah, merubah data pasien pada Rumah Sakit

@@ -43,111 +43,7 @@
                 <div class="uk-navbar-flip">
                     <ul class="uk-navbar-nav user_actions">
                         <li><a href="#" id="main_search_btn" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE8B6;</i></a></li>
-                        <li data-uk-dropdown="{mode:'click'}">
-                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7F4;</i><span class="uk-badge">16</span></a>
-                            <div class="uk-dropdown uk-dropdown-xlarge uk-dropdown-flip">
-                                <div class="md-card-content">
-                                    <ul class="uk-tab uk-tab-grid" data-uk-tab="{connect:'#header_alerts',animation:'slide-horizontal'}">
-                                        <li class="uk-width-1-2 uk-active"><a href="#" class="js-uk-prevent uk-text-small">Messages (12)</a></li>
-                                        <li class="uk-width-1-2"><a href="#" class="js-uk-prevent uk-text-small">Alerts (4)</a></li>
-                                    </ul>
-                                    <ul id="header_alerts" class="uk-switcher uk-margin">
-                                        <li>
-                                            <ul class="md-list md-list-addon">
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <span class="md-user-letters md-bg-cyan">fg</span>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Ut harum dolores.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Quam sunt eveniet ut ullam odit mollitia veritatis suscipit ea quis.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="{{asset('assets/img/avatars/avatar_07_tn.png')}}" alt=""/>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Ut omnis voluptatibus.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Est molestias assumenda placeat reiciendis et.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <span class="md-user-letters md-bg-light-green">ew</span>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Ut nihil dolores.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Fuga deleniti ipsum ut molestias perferendis in autem.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="{{asset('assets/img/avatars/avatar_02_tn.png')}}" alt=""/>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Qui ab sed.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Vel quisquam labore voluptatibus non ab et.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <img class="md-user-image md-list-addon-avatar" src="{{asset('assets/img/avatars/avatar_09_tn.png')}}" alt=""/>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Iure magni quia.</a></span>
-                                                        <span class="uk-text-small uk-text-muted">Non aut est repellat voluptatem recusandae.</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="uk-text-center uk-margin-top uk-margin-small-bottom">
-                                                <a href="page_mailbox.html" class="md-btn md-btn-flat md-btn-flat-primary js-uk-prevent">Show All</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <ul class="md-list md-list-addon">
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons uk-text-warning">&#xE8B2;</i>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading">Quasi deleniti aliquid.</span>
-                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Omnis odit voluptatibus nesciunt aspernatur libero laudantium tempora ut.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons uk-text-success">&#xE88F;</i>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading">Soluta aut.</span>
-                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Ut est voluptatem temporibus.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons uk-text-danger">&#xE001;</i>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading">Dignissimos maxime reprehenderit.</span>
-                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Et autem assumenda autem et enim.</span>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="md-list-addon-element">
-                                                        <i class="md-list-addon-icon material-icons uk-text-primary">&#xE8FD;</i>
-                                                    </div>
-                                                    <div class="md-list-content">
-                                                        <span class="md-list-heading">Soluta totam est.</span>
-                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Qui pariatur non aliquam ipsum consequuntur.</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
+                        
                         <li data-uk-dropdown="{mode:'click'}">
                             <a href="#" class="user_action_image"><img class="md-user-image" src="{{asset('assets/img/smiley.png')}}" alt=""/></a>
                             <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
@@ -172,7 +68,7 @@
 		
 		<div style="color: white;margin-top: -30px ; margin-right: 200px; float: right">
 		
-		   {{session('nama')}} </i>
+		   Selamat datang, {{session('nama')}} </i>
 		   	
 		
 		</div>

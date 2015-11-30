@@ -142,7 +142,9 @@ class RumahsakitController extends Controller {
     }
     protected function daftarrujukan(){
         //print_r('te');//exit;
-        $data = Input::all();
+        
+	$data = Input::all();
+        //dd($data);exit;
         $f_id_rujukan="";
         $f_id_rm="";
         $f_tgl="";
@@ -165,9 +167,9 @@ class RumahsakitController extends Controller {
             $que=$que->where('tanggal','=',$f_tgl.'%');
         }
 //            $que=$que->where('status_hapus','<>','1');
-            $que=$que->where('status_layanan','is','null');
-            $que=$que->orwhere('status_rm','is','null');
-            $que=$que->orwhere('status_antrian','is','null');
+//            $que=$que->where('status_layanan','is','null');
+//            $que=$que->orwhere('status_rm','is','null');
+//            $que=$que->orwhere('status_antrian','is','null');
             
         $que=$que->paginate($rowsPerPage); 
 
