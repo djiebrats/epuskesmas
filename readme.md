@@ -4,7 +4,9 @@ epuskesmas adalah applikasi berbasis website yang ditujukan untuk puskesmas dala
 
 ## Meta data
 Programmer : [Rahadian Bisma](http://djiebrats.net)
+
 Framework  : Laravel PHP Framework
+
 Client     : Sistem Informasi ITS & Dinkes Kota Kediri
 
 
